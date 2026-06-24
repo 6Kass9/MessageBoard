@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Inter:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f3f4f6;
+    color: #1f2937;
+    padding: 2rem 1rem;
+}
+
+.app-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #111827;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    color: #6b7280;
+}
+
+.form-section {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto 3rem auto;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    height: 100px;
+    resize: none;
+}
+
+button {
+    width: 100%;
+    background-color: #2563eb; 
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+.board-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 0.5rem;
+}
+
+#messages-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.post-it {
+    background-color: #fef08a;
+    padding: 1.5rem;
+    min-height: 200px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    font-family: 'Caveat', cursive;
+    font-size: 1.4rem;
+    color: #1e293b;
+    
+    transform: rotate(-1.5deg);
+    transition: transform 0.2s ease-in-out;
+}
+
+.post-it:nth-child(even) {
+    transform: rotate(2deg);
+    background-color: #fef08a;
+}
+
+.post-it:hover {
+    transform: scale(1.05) rotate(0deg);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.post-it-text {
+    word-break: break-word;
+    line-height: 1.2;
+}
+
+.post-it-author {
+    font-size: 1.1rem;
+    text-align: right;
+    font-weight: 700;
+    margin-top: 1rem;
+    border-top: 1px dashed rgba(0, 0, 0, 0.1);
+    padding-top: 0.5rem;
+}
